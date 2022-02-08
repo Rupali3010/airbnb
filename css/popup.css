@@ -1,0 +1,77 @@
+.popup {
+  background-color: black;
+  display: none;
+}
+
+.popup article {
+  width: 60%;
+  margin: 0 auto;
+  height: 70vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.popup article div:nth-child(1) button {
+  display: flex;
+  padding: 10px;
+  border: none;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+.popup article div:nth-child(2) button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.translation {
+  display: flex;
+  align-items: center;
+}
+.translation span {
+  padding: 10px 10px;
+}
+.translation span:nth-child(3) button {
+  display: flex;
+  margin-left: 250px;
+}
+.translation span:nth-child(3) {
+  padding: 10px;
+}
+.popup article div:nth-child(4) {
+  padding: 10px;
+}
+.popup article div:nth-child(5) {
+  padding: 10px;
+}
+.popup article div:nth-child(6) ul {
+  padding: 10px;
+  display: flex;
+}
+
+.popup article div:nth-child(6) ul li {
+  list-style: none;
+  padding: 0 30px;
+}
+.languages h4 {
+  padding: 10px;
+}
+.languages ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.languages ul li {
+  flex-basis: 20%;
+  line-height: 50px;
+  list-style: none;
+}
+.languages ul li a {
+  text-decoration: none;
+}
+.active {
+  display: block;
+}

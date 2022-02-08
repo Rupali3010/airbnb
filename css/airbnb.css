@@ -1,0 +1,201 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("./filter.css");
+@import url("./popup.css");
+@import url("./tripBlock.css");
+@import url("./airbnbExp.css");
+@import url("./modal.css");
+
+:root {
+  --header-background: #000;
+  --airBnBtn: #ff385c;
+  --header-color: #fff;
+  --logo-fill-color: #fff;
+  --base-color: #fff;
+  --icon-base-backfround: #fff;
+  --auth-menu-hover-backfround: rgb(255, 255, 255, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  background: #efefef;
+}
+
+#_HeaderSection {
+  height: 70px;
+  background-color: var(--header-background);
+  color: var(--header-color);
+}
+
+#_HeaderSection > article {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.logoBlock {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+.logoBlock > a > svg {
+  fill: var(--logo-fill-color);
+}
+
+.menuBlock {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.authBlock {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Headerc Navbar css */
+.menuBlock > nav > ul,
+.authBlock > ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menuBlock > nav > ul > li > a,
+.authBlock > ul > li > a {
+  text-decoration: none;
+  color: var(--base-color);
+  padding: 10px 20px;
+}
+
+.authBlock > ul > li > a {
+  padding: 7px 12px !important;
+}
+
+.authBlock > ul > li:last-child > a {
+  background-color: var(--icon-base-backfround);
+  width: 70px;
+  border-radius: 20px;
+  margin-left: 8px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.authBlock > ul > li:last-child > a > span:first-child {
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authBlock > ul > li:last-child > a > span.userIcon {
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #666;
+}
+
+.authBlock > ul > li > a:hover {
+  background: var(--auth-menu-hover-backfround);
+  border-radius: 20px;
+}
+
+.authBlock > ul > li:last-child > a:hover {
+  background-color: var(--base-color);
+  border-radius: 20px;
+}
+
+.authBlock > ul > li {
+  position: relative;
+}
+
+.dropdownMenu {
+  width: 210px;
+  height: 210px;
+  background: var(--base-color);
+  position: absolute;
+  right: 0px;
+  top: 53px;
+  border-radius: 20px;
+  display: none;
+  box-shadow: 1px 1px 3px 0px #ccc;
+  z-index: 1;
+}
+
+.dropdownMenu > ul {
+  list-style: none;
+}
+
+.dropdownMenu > ul > li > a {
+  color: #000;
+  text-decoration: none;
+  justify-content: flex-start;
+  line-height: 40px;
+  padding-left: 12px;
+}
+
+.dropdownMenu > ul > li:nth-child(2) {
+  border-bottom: 1px solid rgb(219, 217, 217);
+}
+
+/* scroll */
+/* scrolled part */
+.scrolled {
+  background-color: #fff !important;
+  color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: ease all 0.6s;
+}
+.hiddenBlock {
+  display: none;
+  color: #111;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 14px;
+  background-color: #fff;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: space-between;
+  width: 300px;
+  height: 45px;
+  position: relative;
+  top: 0;
+}
+.hiddenBlock span:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  padding: 0 8px;
+  font-weight: 600;
+}
+.hiddenBlock span:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+}
+.hiddenBlock span:nth-child(2) i {
+  background-color: #ff385c;
+  padding: 10px;
+  border-radius: 50px;
+  color: #fff;
+}

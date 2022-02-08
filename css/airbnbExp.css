@@ -1,0 +1,130 @@
+:root {
+  --header-background: #000;
+  --airBnBtn: #ff385c;
+  --header-color: #fff;
+  --logo-fill-color: #fff;
+  --base-color: #fff;
+  --icon-base-backfround: #fff;
+  --auth-menu-hover-backfround: rgb(255, 255, 255, 0.15);
+}
+
+#airbnbExp {
+  height: auto;
+  width: 100%;
+  background-color: var(--base-color);
+}
+
+#airbnbExp article {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#airbnbExp article h1 {
+  padding: 20px 0;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#airbnbExp article main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#airbnbExp article main .leftContainer {
+  background: url("../images/exp1.webp");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 49%;
+  background-size: cover;
+  background-attachment: scroll;
+  border-radius: 20px;
+}
+
+#airbnbExp article main .rightContainer {
+  background: url("../images/exp2.webp");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 49%;
+  background-size: cover;
+  background-attachment: scroll;
+  border-radius: 20px;
+}
+
+#airbnbExp article main aside {
+  margin: 20px 23px;
+  color: #fff;
+  padding: 20px;
+  display: inline-block;
+}
+
+#airbnbExp article main aside h2 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#airbnbExp article main aside a {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: var(--base-color);
+  color: var(--header-background);
+  display: inline-block;
+  margin: 30px 0;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#airbnbExp article main aside a:hover {
+  background-color: #efefef;
+}
+
+#hostingBlock {
+  width: 100%;
+  height: auto;
+  background-color: var(--base-color);
+}
+
+#hostingBlock article {
+  width: 85%;
+  margin: 0 auto;
+  height: 500px;
+}
+
+#hostingBlock article div img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+}
+
+#hostingBlock article .hosting {
+  background-image: url("../images/hosting.jpg");
+  position: relative;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#hostingBlock article .hosting h1 {
+  color: var(--base-color);
+  font-size: 70px;
+  padding: 20px 50px;
+}
+
+#hostingBlock article .hosting a {
+  text-decoration: none;
+  padding: 13px 20px;
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 150px;
+  display: inline-block;
+}
